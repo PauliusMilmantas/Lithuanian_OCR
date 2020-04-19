@@ -32,14 +32,14 @@ for cls in classes:
             amount_to_train -= 1
             shutil.move('data/' + cls + '/' + files[i], 'training/' + cls + '/' + str(idx_train) + '.jpg')
 
+            idx_train += 1
         elif(amount_to_test != 0):
             amount_to_test -= 1
             shutil.move('data/' + cls + '/' + files[i], 'test/' + cls + '/' + str(idx_test) + '.jpg')
 
+            idx_test += 1
         else:
             amount_to_validate -= 1
             shutil.move('data/' + cls + '/' + files[i], 'val/' + cls + '/' + str(idx_val) + '.jpg')
 
-        idx_test += 1
-        idx_val += 1
-        idx_train += 1
+            idx_val += 1
