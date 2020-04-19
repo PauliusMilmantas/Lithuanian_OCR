@@ -65,24 +65,9 @@ for record in records:
     )
 
     cropped_img = cropped_img.resize(
-        (100, 100),
+        (28, 28),
         Image.NEAREST
     )
 
     cropped_img.save('data/' + name + '/' + str(id) + '.jpg')
     id += 1
-
-
-
-
-
-
-
-
-
-
-# from PIL import Image
-# im = Image.open("IMG_20200325_134213.jpg")
-#
-# crop_rectangle = (50, 50, 200, 200)
-# cropped_im = im.crop(crop_rectangle)
