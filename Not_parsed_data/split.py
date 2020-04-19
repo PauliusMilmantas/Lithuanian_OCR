@@ -6,9 +6,11 @@ testing_perc = 0.1
 validation_perc = 0.2
 
 classes = os.listdir('data/')
-for cls in classes:
 
-    idx = 0
+idx_test = 0
+idx_val = 0
+idx_train = 0
+for cls in classes:
 
     if(os.path.isdir('training/' + cls) == False):
         os.mkdir('training/' + cls)
@@ -28,18 +30,16 @@ for cls in classes:
     for i in range(len(files)):
         if(amount_to_train != 0):
             amount_to_train -= 1
-            shutil.move('data/' + cls + '/' + files[i], 'training/' + cls + '/' + str(idx) + '.jpg')
+            shutil.move('data/' + cls + '/' + files[i], 'training/' + cls + '/' + str(idx_train) + '.jpg')
 
-            if(amount_to_train == 0):
-                idx = -1
         elif(amount_to_test != 0):
             amount_to_test -= 1
-            shutil.move('data/' + cls + '/' + files[i], 'test/' + cls + '/' + str(idx) + '.jpg')
+            shutil.move('data/' + cls + '/' + files[i], 'test/' + cls + '/' + str(idx_test) + '.jpg')
 
-            if(amount_to_test == 0):
-                idx = -1
         else:
             amount_to_validate -= 1
-            shutil.move('data/' + cls + '/' + files[i], 'val/' + cls + '/' + str(idx) + '.jpg')
+            shutil.move('data/' + cls + '/' + files[i], 'val/' + cls + '/' + str(idx_val) + '.jpg')
 
-        idx += 1
+        idx_test += 1
+        idx_val += 1
+        idx_train += 1
