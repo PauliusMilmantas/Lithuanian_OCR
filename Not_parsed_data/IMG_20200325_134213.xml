@@ -1223,7 +1223,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1235,7 +1235,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1247,7 +1247,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1259,7 +1259,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1271,7 +1271,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1283,7 +1283,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1295,7 +1295,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1307,7 +1307,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1319,7 +1319,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1331,7 +1331,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1343,7 +1343,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1355,7 +1355,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1367,7 +1367,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1379,7 +1379,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1391,7 +1391,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1403,7 +1403,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
@@ -1415,7 +1415,7 @@
 		</bndbox>
 	</object>
 	<object>
-		<name>c2</name>
+		<name>d</name>
 		<pose>Unspecified</pose>
 		<truncated>Unspecified</truncated>
 		<difficult>Unspecified</difficult>
