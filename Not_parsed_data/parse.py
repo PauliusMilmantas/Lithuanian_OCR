@@ -1,9 +1,10 @@
 import xml.etree.ElementTree as ET
 import os
+import matplotlib.pyplot as plt
 
 from PIL import Image
 
-tree = ET.parse('IMG_20200325_134213.xml')
+tree = ET.parse('IMG_20200420_202930.xml')
 root = tree.getroot()
 
 class Record():
@@ -49,7 +50,7 @@ for childRoot in root:
             )
         )
 
-img = Image.open('IMG_20200325_134213.jpg')
+img = Image.open('IMG_20200420_202930.jpg')
 id = 0
 for record in records:
     name = record.name
@@ -65,7 +66,7 @@ for record in records:
     )
 
     cropped_img = cropped_img.resize(
-        (28, 28),
+        (254, 254),
         Image.NEAREST
     )
 
