@@ -66,7 +66,7 @@ for record in records:
     )
 
     cropped_img = cropped_img.resize(
-        (254, 254),
+        (64, 64),
         Image.NEAREST
     )
 
