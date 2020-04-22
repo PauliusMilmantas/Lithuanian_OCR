@@ -28,4 +28,4 @@ for cls in classes:
 
         for i in range(5):
             noise_img = sp_noise(image,0.01*(i+1))
-            cv2.imwrite('data/' + str(cls) + "/" + fl + "-modified-" + ".jpg", noise_img)
+            cv2.imwrite('data/' + str(cls) + "/" + fl + "-modified-" + str(i) + ".jpg", noise_img)
