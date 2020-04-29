@@ -4,7 +4,13 @@ import matplotlib.pyplot as plt
 
 from PIL import Image
 
-tree = ET.parse('IMG_20200420_202930.xml')
+# batch_name = 'IMG_20200420_202930'
+# batch_id = '1'
+
+batch_name = 'IMG_20200427_224619'
+batch_id = '2'
+
+tree = ET.parse(batch_name + '.xml')
 root = tree.getroot()
 
 class Record():
@@ -50,10 +56,13 @@ for childRoot in root:
             )
         )
 
-img = Image.open('IMG_20200420_202930.jpg')
+img = Image.open(batch_name + '.jpg')
 id = 0
 for record in records:
     name = record.name
+
+    if(os.path.isdir('data/') == False):
+        os.mkdir('data/')
 
     if(os.path.isdir('data/' + str(name) + '/') == False):
         os.mkdir('data/' + str(name) + '/')
@@ -70,5 +79,5 @@ for record in records:
         Image.NEAREST
     )
 
-    cropped_img.save('data/' + name + '/' + str(id) + '.jpg')
+    cropped_img.save('data/' + name + '/' + str(id) + '-' + str(batch_id) + '.jpg')
     id += 1
