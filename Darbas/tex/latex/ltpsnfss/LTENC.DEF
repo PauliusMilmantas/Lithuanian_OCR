@@ -1,0 +1,274 @@
+%% 
+%% This is file `ltenc.def', generated 
+%% on <1995/6/23> with the docstrip utility (2.2i).
+%% 
+%% The original source files were:
+%% 
+%% ltoutenc.dtx  (with options: `LT')
+%% 
+%% 
+%% This is a generated file. 
+%% 
+%% Copyright 1993-1995 the LaTeX3 project and any individual authors 
+%% listed elsewhere in this file. All rights reserved. 
+%% 
+%% For further copyright information see the file legal.txt, and any 
+%% other copyright notices in this file. 
+%% 
+%% This file is part of the LaTeX2e system. 
+%% ---------------------------------------- 
+%% This system is distributed in the hope that it will be useful, 
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of 
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+%% 
+%% For error reports concerning UNCHANGED versions of this file no more 
+%% than one year old, see bugs.txt. 
+%% 
+%% Please do not request updates from us directly. Primary 
+%% distribution is through the CTAN archives. 
+%% 
+%% 
+%% IMPORTANT COPYRIGHT NOTICE: 
+%% 
+%% You are NOT ALLOWED to distribute this file alone. 
+%% 
+%% You are allowed to distribute this file under the condition that it is 
+%% distributed together with all the files listed in manifest.txt. 
+%% 
+%% If you receive only some of these files from someone, complain! 
+%% 
+%% Permission is granted to copy this file to another file with a clearly 
+%% different name and to customize the declarations in that copy to serve 
+%% the needs of your installation, provided that you comply with 
+%% the conditions in the file legal.txt. 
+%% 
+%% However, NO PERMISSION is granted to generate or to distribute a 
+%% modified version of this file under its original name. 
+%% 
+%% You are NOT ALLOWED to change this file. 
+%% 
+%% 
+%% MODIFICATION ADVICE: 
+%% 
+%% If you want to customize this file, it is best to make a copy of the 
+%% source file(s) from which it was produced. Use a different name for 
+%% your copy(ies) and modify the copy(ies); this will ensure that your 
+%% modifications do not get overwritten when you install a new release of 
+%% the standard system. You should also ensure that your modified source 
+%% file does not generate any modified file with the same name as a 
+%% standard file. You can then easily distribute your modifications by 
+%% distributing the modified and renamed copy of the source file, taking 
+%% care to observe the conditions in legal.txt; this will ensure that 
+%% other users can safely use your modifications. 
+%% 
+%% You will also need to produce your own, suitably named, .ins file to 
+%% control the generation of files from your source file; this file 
+%% should contain your own preambles for the files it generates, not 
+%% those in the standard .ins files. 
+%% 
+%% The names of the source files used are shown above. 
+%% 
+%% 
+%% 
+%%% File: ltoutenc
+\ProvidesFile{ltenc.def}[1994/12/14 Standard LaTeX file]
+\DeclareErrorFont{T1}{ptm}{m}{n}{10}
+\DeclareFontEncoding{LT}{}{}
+\DeclareTextAccent{\`}{LT}{0}
+\DeclareTextAccent{\'}{LT}{1}
+\DeclareTextAccent{\^}{LT}{2}
+\DeclareTextAccent{\~}{LT}{3}
+\DeclareTextAccent{\"}{LT}{4}
+\DeclareTextAccent{\H}{LT}{5}
+\DeclareTextAccent{\r}{LT}{6}
+\DeclareTextAccent{\v}{LT}{7}
+\DeclareTextAccent{\u}{LT}{8}
+\DeclareTextAccent{\=}{LT}{9}
+\DeclareTextAccent{\.}{LT}{10}
+\DeclareTextCommand{\b}{LT}[1]
+   {{\o@lign{\relax#1\crcr\hidewidth\sh@ft{29}%
+     \vbox to.2ex{\hbox{\char9}\vss}\hidewidth}}}
+\DeclareTextCommand{\c}{LT}[1]
+   {\setbox\z@\hbox{#1}\ifdim\ht\z@=1ex\accent11 #1%
+     \else{\ooalign{\hidewidth\char11\hidewidth
+        \crcr\unhbox\z@}}\fi}
+\DeclareTextCommand{\d}{LT}[1]
+   {{\o@lign{\relax#1\crcr\hidewidth\sh@ft{10}.\hidewidth}}}
+\DeclareTextCommand{\k}{LT}[1]
+   {\oalign{\null#1\crcr\hidewidth\char12}}
+\DeclareTextSymbol{\AA}{LT}{197}
+\DeclareTextSymbol{\AE}{LT}{198}
+\DeclareTextSymbol{\An}{LT}{129}
+\DeclareTextSymbol{\Cv}{LT}{131}
+\DeclareTextSymbol{\DH}{LT}{208}
+\DeclareTextSymbol{\DJ}{LT}{208}
+\DeclareTextSymbol{\En}{LT}{134}
+\DeclareTextSymbol{\Et}{LT}{132}
+\DeclareTextSymbol{\Ino}{LT}{137}
+\DeclareTextSymbol{\L}{LT}{138}
+\DeclareTextSymbol{\NG}{LT}{141}
+\DeclareTextSymbol{\OE}{LT}{215}
+\DeclareTextSymbol{\O}{LT}{216}
+\DeclareTextSymbol{\SS}{LT}{223}
+\DeclareTextSymbol{\Sv}{LT}{146}
+\DeclareTextSymbol{\TH}{LT}{222}
+\DeclareTextSymbol{\Ub}{LT}{195}
+\DeclareTextSymbol{\Un}{LT}{152}
+\DeclareTextSymbol{\Zv}{LT}{154}
+\DeclareTextSymbol{\aa}{LT}{229}
+\DeclareTextSymbol{\ae}{LT}{230}
+\DeclareTextSymbol{\an}{LT}{161}
+\DeclareTextSymbol{\cv}{LT}{163}
+\DeclareTextSymbol{\dh}{LT}{240}
+\DeclareTextSymbol{\dj}{LT}{158}
+\DeclareTextSymbol{\en}{LT}{166}
+\DeclareTextSymbol{\et}{LT}{164}
+\DeclareTextSymbol{\guillemotleft}{LT}{19}
+\DeclareTextSymbol{\guillemotright}{LT}{20}
+\DeclareTextSymbol{\guilsinglleft}{LT}{14}
+\DeclareTextSymbol{\guilsinglright}{LT}{15}
+\DeclareTextSymbol{\i}{LT}{25}
+\DeclareTextSymbol{\ino}{LT}{169}
+\DeclareTextSymbol{\j}{LT}{26}
+\DeclareTextSymbol{\l}{LT}{170}
+%\DeclareTextSymbol{\ng}{LT}{173}
+\DeclareTextSymbol{\oe}{LT}{247}
+\DeclareTextSymbol{\o}{LT}{248}
+\DeclareTextSymbol{\quotedblbase}{LT}{18}
+\DeclareTextSymbol{\quotesinglbase}{LT}{13}
+\DeclareTextSymbol{\ss}{LT}{255}
+\DeclareTextSymbol{\sv}{LT}{178}
+\DeclareTextSymbol{\textbraceleft}{LT}{`\{}
+\DeclareTextSymbol{\textbraceright}{LT}{`\}}
+\DeclareTextSymbol{\textcompwordmark}{LT}{23}
+\DeclareTextSymbol{\textdollar}{LT}{`\$}
+\DeclareTextSymbol{\textemdash}{LT}{22}
+\DeclareTextSymbol{\textendash}{LT}{21}
+\DeclareTextSymbol{\textexclamdown}{LT}{189}
+\DeclareTextSymbol{\textquestiondown}{LT}{190}
+\DeclareTextSymbol{\textquotedblleft}{LT}{16}
+\DeclareTextSymbol{\textquotedblright}{LT}{17}
+\DeclareTextSymbol{\textquotedbl}{LT}{`\"}
+\DeclareTextSymbol{\textquoteleft}{LT}{`\`}
+\DeclareTextSymbol{\textquoteright}{LT}{`\'}
+\DeclareTextSymbol{\textsection}{LT}{159}
+\DeclareTextSymbol{\textsterling}{LT}{191}
+\DeclareTextSymbol{\textunderscore}{LT}{95}
+\DeclareTextSymbol{\textvisiblespace}{LT}{32}
+%\DeclareTextSymbol{\th}{LT}{254}
+\DeclareTextSymbol{\ub}{LT}{227}
+\DeclareTextSymbol{\un}{LT}{184}
+\DeclareTextSymbol{\zv}{LT}{186}
+\DeclareTextComposite{\.}{LT}{i}{`\i}
+\DeclareTextComposite{\u}{LT}{A}{128}
+\DeclareTextComposite{\k}{LT}{A}{129}
+\DeclareTextComposite{\'}{LT}{C}{130}
+\DeclareTextComposite{\v}{LT}{C}{131}
+\DeclareTextComposite{\.}{LT}{E}{132}
+\DeclareTextComposite{\v}{LT}{E}{133}
+\DeclareTextComposite{\k}{LT}{E}{134}
+\DeclareTextComposite{\u}{LT}{G}{135}
+\DeclareTextComposite{\'}{LT}{L}{136}
+\DeclareTextComposite{\k}{LT}{I}{137}
+\DeclareTextComposite{\'}{LT}{N}{139}
+\DeclareTextComposite{\v}{LT}{N}{140}
+\DeclareTextComposite{\H}{LT}{O}{142}
+\DeclareTextComposite{\'}{LT}{R}{143}
+\DeclareTextComposite{\v}{LT}{R}{144}
+\DeclareTextComposite{\'}{LT}{S}{145}
+\DeclareTextComposite{\v}{LT}{S}{146}
+\DeclareTextComposite{\c}{LT}{S}{147}
+\DeclareTextComposite{\v}{LT}{T}{148}
+\DeclareTextComposite{\c}{LT}{T}{149}
+\DeclareTextComposite{\H}{LT}{U}{150}
+\DeclareTextComposite{\r}{LT}{U}{151}
+\DeclareTextComposite{\k}{LT}{U}{152}
+\DeclareTextComposite{\'}{LT}{Z}{153}
+\DeclareTextComposite{\v}{LT}{Z}{154}
+\DeclareTextComposite{\.}{LT}{Z}{155}
+\DeclareTextComposite{\.}{LT}{I}{157}
+\DeclareTextComposite{\u}{LT}{a}{160}
+\DeclareTextComposite{\k}{LT}{a}{161}
+\DeclareTextComposite{\'}{LT}{c}{162}
+\DeclareTextComposite{\v}{LT}{c}{163}
+\DeclareTextComposite{\.}{LT}{e}{164}
+\DeclareTextComposite{\v}{LT}{e}{165}
+\DeclareTextComposite{\k}{LT}{e}{166}
+\DeclareTextComposite{\u}{LT}{g}{167}
+\DeclareTextComposite{\'}{LT}{l}{168}
+\DeclareTextComposite{\k}{LT}{i}{169}
+\DeclareTextComposite{\'}{LT}{n}{171}
+\DeclareTextComposite{\v}{LT}{n}{172}
+\DeclareTextComposite{\H}{LT}{o}{174}
+\DeclareTextComposite{\'}{LT}{r}{175}
+\DeclareTextComposite{\v}{LT}{r}{176}
+\DeclareTextComposite{\'}{LT}{s}{177}
+\DeclareTextComposite{\v}{LT}{s}{178}
+\DeclareTextComposite{\c}{LT}{s}{179}
+\DeclareTextComposite{\v}{LT}{t}{180}
+\DeclareTextComposite{\c}{LT}{t}{181}
+\DeclareTextComposite{\H}{LT}{u}{182}
+\DeclareTextComposite{\r}{LT}{u}{183}
+\DeclareTextComposite{\k}{LT}{u}{184}
+\DeclareTextComposite{\'}{LT}{z}{185}
+\DeclareTextComposite{\v}{LT}{z}{186}
+\DeclareTextComposite{\.}{LT}{z}{187}
+\DeclareTextComposite{\`}{LT}{A}{192}
+\DeclareTextComposite{\'}{LT}{A}{193}
+\DeclareTextComposite{\^}{LT}{A}{194}
+\DeclareTextComposite{\=}{LT}{U}{195}
+\DeclareTextComposite{\"}{LT}{A}{196}
+\DeclareTextComposite{\r}{LT}{A}{197}
+\DeclareTextComposite{\c}{LT}{C}{199}
+\DeclareTextComposite{\`}{LT}{E}{200}
+\DeclareTextComposite{\'}{LT}{E}{201}
+\DeclareTextComposite{\^}{LT}{E}{202}
+\DeclareTextComposite{\"}{LT}{E}{203}
+\DeclareTextComposite{\`}{LT}{I}{204}
+\DeclareTextComposite{\'}{LT}{I}{205}
+\DeclareTextComposite{\^}{LT}{I}{206}
+\DeclareTextComposite{\"}{LT}{I}{207}
+\DeclareTextComposite{\~}{LT}{N}{209}
+\DeclareTextComposite{\`}{LT}{O}{210}
+\DeclareTextComposite{\'}{LT}{O}{211}
+\DeclareTextComposite{\^}{LT}{O}{212}
+\DeclareTextComposite{\~}{LT}{O}{213}
+\DeclareTextComposite{\"}{LT}{O}{214}
+\DeclareTextComposite{\`}{LT}{U}{217}
+\DeclareTextComposite{\'}{LT}{U}{218}
+\DeclareTextComposite{\^}{LT}{U}{219}
+\DeclareTextComposite{\"}{LT}{U}{220}
+\DeclareTextComposite{\'}{LT}{Y}{221}
+\DeclareTextComposite{\`}{LT}{a}{224}
+\DeclareTextComposite{\'}{LT}{a}{225}
+\DeclareTextComposite{\^}{LT}{a}{226}
+\DeclareTextComposite{\=}{LT}{u}{227}
+\DeclareTextComposite{\"}{LT}{a}{228}
+\DeclareTextComposite{\r}{LT}{a}{229}
+\DeclareTextComposite{\c}{LT}{c}{231}
+\DeclareTextComposite{\`}{LT}{e}{232}
+\DeclareTextComposite{\'}{LT}{e}{233}
+\DeclareTextComposite{\^}{LT}{e}{234}
+\DeclareTextComposite{\"}{LT}{e}{235}
+\DeclareTextComposite{\`}{LT}{i}{236}
+\DeclareTextComposite{\`}{LT}{\i}{236}
+\DeclareTextComposite{\'}{LT}{i}{237}
+\DeclareTextComposite{\'}{LT}{\i}{237}
+\DeclareTextComposite{\^}{LT}{i}{238}
+\DeclareTextComposite{\^}{LT}{\i}{238}
+\DeclareTextComposite{\"}{LT}{i}{239}
+\DeclareTextComposite{\"}{LT}{\i}{239}
+\DeclareTextComposite{\~}{LT}{n}{241}
+\DeclareTextComposite{\`}{LT}{o}{242}
+\DeclareTextComposite{\'}{LT}{o}{243}
+\DeclareTextComposite{\^}{LT}{o}{244}
+\DeclareTextComposite{\~}{LT}{o}{245}
+\DeclareTextComposite{\"}{LT}{o}{246}
+\DeclareTextComposite{\`}{LT}{u}{249}
+\DeclareTextComposite{\'}{LT}{u}{250}
+\DeclareTextComposite{\^}{LT}{u}{251}
+\DeclareTextComposite{\"}{LT}{u}{252}
+\DeclareTextComposite{\'}{LT}{y}{253}
+\endinput
+%% 
+%% End of file `ltenc.def'.

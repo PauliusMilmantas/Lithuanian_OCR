@@ -1,0 +1,236 @@
+%% 
+%% This is file `cpKBL.def', generated 
+%% on <1996/6/27> with the docstrip utility (2.2i).
+%% 
+%% The original source files were:
+%% 
+%% ltputenc.dtx  (with options: `cpKBL')
+%% 
+%% 
+%% This is a generated file. 
+%% 
+%% Copyright 1993-1995 the LaTeX3 project and any individual authors 
+%% listed elsewhere in this file. All rights reserved. 
+%% 
+%% For further copyright information see the file legal.txt, and any 
+%% other copyright notices in this file. 
+%% 
+%% This file is part of the LaTeX2e system. 
+%% ---------------------------------------- 
+%% This system is distributed in the hope that it will be useful, 
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of 
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+%% 
+%% For error reports concerning UNCHANGED versions of this file no more 
+%% than one year old, see bugs.txt. 
+%% 
+%% Please do not request updates from us directly. Primary 
+%% distribution is through the CTAN archives. 
+%% 
+%% 
+%% IMPORTANT COPYRIGHT NOTICE: 
+%% 
+%% You are NOT ALLOWED to distribute this file alone. 
+%% 
+%% You are allowed to distribute this file under the condition that it is 
+%% distributed together with all the files listed in manifest.txt. 
+%% 
+%% If you receive only some of these files from someone, complain! 
+%% 
+%% Permission is granted to copy this file to another file with a clearly 
+%% different name and to customize the declarations in that copy to serve 
+%% the needs of your installation, provided that you comply with 
+%% the conditions in the file legal.txt. 
+%% 
+%% However, NO PERMISSION is granted to generate or to distribute a 
+%% modified version of this file under its original name. 
+%% 
+%% You are NOT ALLOWED to change this file. 
+%% 
+%% 
+%% MODIFICATION ADVICE: 
+%% 
+%% If you want to customize this file, it is best to make a copy of the 
+%% source file(s) from which it was produced. Use a different name for 
+%% your copy(ies) and modify the copy(ies); this will ensure that your 
+%% modifications do not get overwritten when you install a new release of 
+%% the standard system. You should also ensure that your modified source 
+%% file does not generate any modified file with the same name as a 
+%% standard file. You can then easily distribute your modifications by 
+%% distributing the modified and renamed copy of the source file, taking 
+%% care to observe the conditions in legal.txt; this will ensure that 
+%% other users can safely use your modifications. 
+%% 
+%% You will also need to produce your own, suitably named, .ins file to 
+%% control the generation of files from your source file; this file 
+%% should contain your own preambles for the files it generates, not 
+%% those in the standard .ins files. 
+%% 
+%% The names of the source files used are shown above. 
+%% 
+%% 
+%% 
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+ \ProvidesFile{cpKBL.def}
+   [1995/06/06 v0.9d Input encoding file.]
+\ProvideTextCommandDefault{\textonequarter}{$\frac14$}
+\ProvideTextCommandDefault{\textonehalf}{$\frac12$}
+\ProvideTextCommandDefault{\textflorin}{\textit{f}}
+\providecommand{\mathordmasculine}{{{}^o}}
+\providecommand{\mathordfeminine}{{{}^a}}
+\providecommand{\uplow}[3]{\global\uccode#1=#2\global\lccode#1=#3}
+\DeclareInputText{"80}{{\c C}}
+\DeclareInputText{"81}{\"u}
+\DeclareInputText{"82}{\'e}
+\DeclareInputText{"83}{\^a}
+\DeclareInputText{"84}{\"a}
+\DeclareInputText{"85}{\`a}
+\DeclareInputText{"86}{\aa}
+\DeclareInputText{"87}{{\c c}}
+\DeclareInputText{"88}{\^e}
+\DeclareInputText{"89}{\"e}
+\DeclareInputText{"8A}{\`e}
+\DeclareInputText{"8B}{\"\i}
+\DeclareInputText{"8C}{\^\i}
+\DeclareInputText{"8D}{\`\i}
+\DeclareInputText{"8E}{\"A}
+\DeclareInputText{"8F}{\AA}
+\DeclareInputText{"90}{\'E}
+\DeclareInputText{"91}{\ae}
+\DeclareInputText{"92}{\AE}
+\DeclareInputText{"93}{\^o}
+\DeclareInputText{"94}{\"o}
+\DeclareInputText{"95}{\`o}
+\DeclareInputText{"96}{\^u}
+\DeclareInputText{"97}{\`u}
+\DeclareInputText{"98}{\"y}
+\DeclareInputText{"99}{\"O}
+\DeclareInputText{"9A}{\"U}
+\DeclareInputText{"9B}{\textcent}
+\DeclareInputText{"9C}{\textsterling}
+\DeclareInputText{"9D}{\textyen}
+%\DeclareInputText{"9E}{}
+\DeclareInputText{"9F}{\textflorin}
+\DeclareInputText{"A0}{\'a}
+\DeclareInputText{"A1}{\'\i}
+\DeclareInputText{"A2}{\'o}
+\DeclareInputText{"A3}{\'u}
+\DeclareInputText{"A4}{\~n}
+\DeclareInputText{"A5}{\~N}
+\DeclareInputMath{"A6}{\mathordfeminine}
+\DeclareInputMath{"A7}{\mathordmasculine}
+\DeclareInputText{"A8}{\textquestiondown}
+%\DeclareInputText{"A9}{}
+%\DeclareInputText{"AA}{}
+\DeclareInputText{"AB}{\textonehalf}
+\DeclareInputText{"AC}{\textonequarter}
+\DeclareInputText{"AD}{\textexclamdown}
+\DeclareInputText{"AE}{\guillemotleft}
+\DeclareInputText{"AF}{\guillemotright}
+%\DeclareInputText{"B0}{}
+%\DeclareInputText{"B1}{}
+%\DeclareInputText{"B2}{}
+%\DeclareInputText{"B3}{}
+%\DeclareInputText{"B4}{}
+%\DeclareInputText{"B5}{}
+%\DeclareInputText{"B6}{}
+%\DeclareInputText{"B7}{}
+%\DeclareInputText{"B8}{}
+%\DeclareInputText{"B9}{}
+%\DeclareInputText{"BA}{}
+%\DeclareInputText{"BB}{}
+%\DeclareInputText{"BC}{}
+%\DeclareInputText{"BD}{}
+%\DeclareInputText{"BE}{}
+%\DeclareInputText{"BF}{}
+%\DeclareInputText{"C0}{}
+%\DeclareInputText{"C1}{}
+%\DeclareInputText{"C2}{}
+%\DeclareInputText{"C3}{}
+\DeclareInputText{"C4}{\textendash}
+%\DeclareInputText{"C5}{}
+%\DeclareInputText{"C6}{}
+%\DeclareInputText{"C7}{}
+%\DeclareInputText{"C8}{}
+%\DeclareInputText{"C9}{}
+%\DeclareInputText{"CA}{}
+%\DeclareInputText{"CB}{}
+%\DeclareInputText{"CC}{}
+%\DeclareInputText{"CD}{}
+%\DeclareInputText{"CE}{}
+%\DeclareInputText{"CF}{}
+%\DeclareInputText{"D0}{}
+%\DeclareInputText{"D1}{}
+%\DeclareInputText{"D2}{}
+%\DeclareInputText{"D3}{}
+%\DeclareInputText{"D4}{}
+%\DeclareInputText{"D5}{}
+%\DeclareInputText{"D6}{}
+%\DeclareInputText{"D7}{}
+%\DeclareInputText{"D8}{}
+%\DeclareInputText{"D9}{}
+%\DeclareInputText{"DA}{}
+%\DeclareInputText{"DB}{}
+\DeclareInputText{"DC}{{\k A}}
+\DeclareInputText{"DD}{{\k a}}
+\DeclareInputText{"DE}{{\v C}}
+\DeclareInputText{"DF}{{\v c}}
+\DeclareInputMath{"E0}{\alpha}
+\DeclareInputMath{"E1}{\beta}
+\DeclareInputMath{"E2}{\Gamma}
+\DeclareInputMath{"E3}{\Pi}
+\DeclareInputMath{"E4}{\Sigma}
+\DeclareInputMath{"E5}{\sigma}
+\DeclareInputMath{"E6}{\mu}
+\DeclareInputMath{"E7}{\gamma}
+\DeclareInputMath{"E8}{\Theta}
+\DeclareInputMath{"E9}{\theta}
+\DeclareInputMath{"EA}{\Omega}
+\DeclareInputMath{"EB}{\delta}
+\DeclareInputMath{"EC}{\infty}
+\DeclareInputMath{"ED}{\emptyset}
+\DeclareInputMath{"EE}{\varepsilon}
+\DeclareInputMath{"EF}{\cap}
+\DeclareInputText{"F0}{{\k E}}
+\DeclareInputText{"F1}{{\k e}}
+\DeclareInputText{"F2}{{\. E}}
+\DeclareInputText{"F3}{{\. e}}
+\DeclareInputText{"F4}{{\k I}}
+\DeclareInputText{"F5}{{\k i}}
+\DeclareInputText{"F6}{{\v S}}
+\DeclareInputText{"F7}{{\v s}}
+\DeclareInputText{"F8}{{\k U}}
+\DeclareInputText{"F9}{{\k u}}
+\DeclareInputText{"FA}{{\= U}}
+\DeclareInputText{"FB}{{\= u}}
+\DeclareInputText{"FC}{{\v Z}}
+\DeclareInputText{"FD}{{\v z}}
+%\DeclareInputText{"FE}{}
+%\DeclareInputText{"FF}{~}
+
+\uplow{"DC}{"DC}{"DD}\uplow{"DD}{"DC}{"DD}
+\uplow{"F0}{"F0}{"F1}\uplow{"F1}{"F0}{"F1}
+\uplow{"F4}{"F4}{"F5}\uplow{"F5}{"F4}{"F5}
+\uplow{"F8}{"F8}{"F9}\uplow{"F9}{"F8}{"F9}
+\uplow{"F2}{"F2}{"F3}\uplow{"F3}{"F2}{"F3}
+\uplow{"FA}{"FA}{"FB}\uplow{"FB}{"FA}{"FB}
+\uplow{"DE}{"DE}{"DF}\uplow{"DF}{"DE}{"DF}
+\uplow{"F6}{"F6}{"F7}\uplow{"F7}{"F6}{"F7}
+\uplow{"FC}{"FC}{"FD}\uplow{"FD}{"FC}{"FD}
+\endinput
+%% 
+%% End of file `cpKBL.def'.

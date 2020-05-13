@@ -1,0 +1,39 @@
+This is TeX, Version 3.14159265 (TeX Live 2016/Debian) (preloaded format=tex 2020.4.18)  13 MAY 2020 20:47
+**\fon
+
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\font
+
+*q
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   q
+<*> q
+     
+? 
+
+*exit
+! Font \inaccessible=q not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   e
+<*> e
+     xit
+? exit
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? q
+OK, entering \batchmode...
+! Emergency stop.
+<*> exit
+        
+*** (job aborted, no legal \end found)
+
+No pages of output.

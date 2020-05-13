@@ -1,0 +1,37 @@
+%Filename: ltphv.fd
+%Created by: tex lt2
+%Created using fontinst v1.6
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ltphv.fd}
+   [1998/09/07 Fontinst v1.6 font definitions for LT/phv.]
+
+\DeclareFontFamily{LT}{phv}{}
+
+\DeclareFontShape{LT}{phv}{m}{n}{
+   <-> fhvr8l
+}{}
+
+\DeclareFontShape{LT}{phv}{m}{it}{
+   <-> fhvro8l
+}{}
+
+\DeclareFontShape{LT}{phv}{b}{n}{
+   <-> fhvb8l
+}{}
+
+\DeclareFontShape{LT}{phv}{b}{it}{
+   <-> fhvbo8l
+}{}
+
+\DeclareFontShape{LT}{phv}{l}{n}{<->ssub * phv/m/n}{}
+\DeclareFontShape{LT}{phv}{l}{it}{<->ssub * phv/m/it}{}
+\DeclareFontShape{LT}{phv}{m}{sl}{<->ssub * phv/m/it}{}
+\DeclareFontShape{LT}{phv}{l}{sl}{<->ssub * phv/m/it}{}
+\DeclareFontShape{LT}{phv}{bx}{n}{<->ssub * phv/b/n}{}
+\DeclareFontShape{LT}{phv}{bx}{it}{<->ssub * phv/b/it}{}
+\DeclareFontShape{LT}{phv}{b}{sl}{<->ssub * phv/b/it}{}
+\DeclareFontShape{LT}{phv}{bx}{sl}{<->ssub * phv/b/it}{}
+
+\endinput

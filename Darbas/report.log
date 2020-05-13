@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2020.4.18)  13 MAY 2020 18:58
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2020.4.18)  13 MAY 2020 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -17,11 +17,11 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpcountB=\count80
 \@IEEEtrantmpcountC=\count81
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for TU+ptm on input line 503.
-LaTeX Font Info:    No file TUptm.fd. on input line 503.
+LaTeX Font Info:    Try loading font information for TU+ptm on input line 499.
+LaTeX Font Info:    No file TUptm.fd. on input line 499.
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 503.
+(Font)              using `TU/lmr/m/n' instead on input line 499.
 
 -- Using 8.5in x 11in (letter) paper.
 -- Using DVI output.
@@ -32,15 +32,15 @@ LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
 \IEEEnormaljot=\dimen108
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1090.
+(Font)              using `TU/ptm/m/n' instead on input line 1086.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1090.
+(Font)              using `TU/ptm/m/n' instead on input line 1086.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1090.
+(Font)              using `TU/ptm/bx/n' instead on input line 1086.
 
 \IEEEquantizedlength=\dimen109
 \IEEEquantizedlengthdiff=\dimen110
@@ -573,10 +573,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5587 strings out of 493068
- 81517 string characters out of 6137720
+ 5584 strings out of 493068
+ 81479 string characters out of 6137720
  247977 words of memory out of 5000000
- 9436 multiletter control sequences out of 15000+600000
+ 9433 multiletter control sequences out of 15000+600000
  76797 words of font info for 73 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  36i,8n,39p,229b,258s stack positions out of 5000i,500n,10000p,200000b,80000s

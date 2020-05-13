@@ -1,0 +1,37 @@
+%Filename: ltptm.fd
+%Created by: tex lt
+%Created using fontinst v1.6
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ltptm.fd}
+   [1998/09/07 Fontinst v1.6 font definitions for LT/ptm.]
+
+\DeclareFontFamily{LT}{ptm}{}
+
+\DeclareFontShape{LT}{ptm}{m}{n}{
+   <-> ftmr8l
+}{}
+
+\DeclareFontShape{LT}{ptm}{m}{it}{
+   <-> ftmri8l
+}{}
+
+\DeclareFontShape{LT}{ptm}{b}{n}{
+   <-> ftmb8l
+}{}
+
+\DeclareFontShape{LT}{ptm}{b}{it}{
+   <-> ftmbi8l
+}{}
+
+\DeclareFontShape{LT}{ptm}{l}{n}{<->ssub * ptm/m/n}{}
+\DeclareFontShape{LT}{ptm}{l}{it}{<->ssub * ptm/m/it}{}
+\DeclareFontShape{LT}{ptm}{m}{sl}{<->ssub * ptm/m/it}{}
+\DeclareFontShape{LT}{ptm}{l}{sl}{<->ssub * ptm/m/it}{}
+\DeclareFontShape{LT}{ptm}{bx}{n}{<->ssub * ptm/b/n}{}
+\DeclareFontShape{LT}{ptm}{bx}{it}{<->ssub * ptm/b/it}{}
+\DeclareFontShape{LT}{ptm}{b}{sl}{<->ssub * ptm/b/it}{}
+\DeclareFontShape{LT}{ptm}{bx}{sl}{<->ssub * ptm/b/it}{}
+
+\endinput

@@ -1,0 +1,135 @@
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\documentclass{article}[1994/11/20]
+%\usepackage{times}
+%\usepackage[T1,LT]{fontenc} 
+\usepackage{addltenc}
+\usepackage[cp774]{inputenc}
+\usepackage[english,lithuanian]{babel}
+\title{\LaTeXe{} font selection}
+ 
+\author{Sigitas Tolu\v sis}
+ 
+\date{\today}
+ 
+\begin{document}
+
+\maketitle
+ 
+\tableofcontents
+ 
+\section{\k Ivadas}
+\Large
+\begin{center}
+\textbf{\v Siandien \today}
+\end{center}
+\large
+\inputencoding{cpKBL}
+KBL ÜİğñôõøùòóúûŞßö÷üı \par
+\textsf{ÜİğñôõøùòóúûŞßö÷üı}\par
+\texttt{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 1cm \uppercase{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 1cm \lowercase{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 0cm\inputencoding{cp774}
+774 \textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}\par
+\leftskip 1cm \uppercase{\textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}}\par
+\leftskip 1cm \lowercase{\textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}}\par
+\leftskip 0cm\inputencoding{cpRIM}
+RIM \textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}\par
+\leftskip 1cm \uppercase{\textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}}\par
+\leftskip 1cm \lowercase{\textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}}\par
+\leftskip 0cm
+\inputencoding{cpKBL}
+
+\selectlanguage{lithuanian}
+%\language1
+\showhyphens{üİsis su septyniais ıİsiukais. Kİsnis. Manİjõ kelrodõ 
+nupûtó vójas.}
+
+\fontsize{17}{\baselineskip}\fontseries{b}\selectfont üİsis su septyniais ıİsiukais. Kİsnis. Manİjõ kelrodõ 
+nupûtó vójas\footnote{\v Cia testas. \scriptsize{(Galb\=ut tai nes\k 
+amon\.e?)}}.\par\normalsize
+
+\selectlanguage{english}
+This document describes the new font selection features of the \LaTeX{}
+Document Preparation System. ÜİğñôõøùòóúûŞßö÷üı It is intended for package writers who
+want to write font-loading packages similar to |times| or |latexsym|.
+
+This document is only a brief introduction to the new facilities and
+is intended for package writers who are familiar with \TeX{} fonts and
+\LaTeX{} packages.  It is \emph{neither} a user-guide \emph{nor} a
+reference manual for fonts in \LaTeXe.
+
+\begin{verbatim} 
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\documentclass{article}[1994/11/20]
+%\usepackage{times}
+%\usepackage[T1,LT]{fontenc} 
+\usepackage{addltenc}
+\usepackage[cp774]{inputenc}
+\usepackage[english,lithuanian]{babel}
+\title{\LaTeXe{} font selection}
+ 
+\author{Sigitas Tolu\v sis}
+ 
+\date{\today}
+ 
+\begin{document}
+
+\maketitle
+ 
+\tableofcontents
+ 
+\section{\k Ivadas}
+\Large
+\begin{center}
+\textbf{\v Siandien \today}
+\end{center}
+\large
+\inputencoding{cpKBL}
+KBL ÜİğñôõøùòóúûŞßö÷üı \par
+\textsf{ÜİğñôõøùòóúûŞßö÷üı}\par
+\texttt{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 1cm \uppercase{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 1cm \lowercase{ÜİğñôõøùòóúûŞßö÷üı}\par
+\leftskip 0cm\inputencoding{cp774}
+\end{verbatim}
+\inputencoding{cp774}
+\begin{verbatim}
+774 \textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}\par
+\leftskip 1cm \uppercase{\textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}}\par
+\leftskip 1cm \lowercase{\textbf{µĞ·Ò½ÔÆÖ¸ÓÇ×¶Ñ¾ÕÏØ}}\par
+\leftskip 0cm\inputencoding{cpRIM}
+\end{verbatim}
+\inputencoding{cpRIM}
+\begin{verbatim}
+RIM \textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}\par
+\leftskip 1cm \uppercase{\textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}}\par
+\leftskip 1cm \lowercase{\textit{ÀàÆæÁáØøËëÛûÈèĞğŞş}}\par
+\leftskip 0cm
+\inputencoding{cpKBL}
+\end{verbatim}
+\inputencoding{cpKBL}
+\begin{verbatim}
+
+\selectlanguage{lithuanian}
+%\language1
+\showhyphens{üİsis su septyniais ıİsiukais. Kİsnis. Manİjõ kelrodõ 
+nupûtó vójas.}
+
+\fontsize{17}{\baselineskip}\fontseries{b}\selectfont üİsis su septyniais ıİsiukais. Kİsnis. Manİjõ kelrodõ 
+nupûtó vójas\footnote{\v Cia testas. \scriptsize{(Galb\=ut tai nes\k 
+amon\.e?)}}.\par\normalsize
+
+\selectlanguage{english}
+This document describes the new font selection features of the \LaTeX{}
+Document Preparation System. ÜİğñôõøùòóúûŞßö÷üı It is intended for package writers who
+want to write font-loading packages similar to |times| or |latexsym|.
+
+This document is only a brief introduction to the new facilities and
+is intended for package writers who are familiar with \TeX{} fonts and
+\LaTeX{} packages.  It is \emph{neither} a user-guide \emph{nor} a
+reference manual for fonts in \LaTeXe.
+\end{document}
+\end{verbatim}
+\end{document}
+

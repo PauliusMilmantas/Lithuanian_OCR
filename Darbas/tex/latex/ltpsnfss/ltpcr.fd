@@ -1,0 +1,37 @@
+%Filename: ltpcr.fd
+%Created by: tex lt3
+%Created using fontinst v1.6
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ltpcr.fd}
+   [1998/09/07 Fontinst v1.6 font definitions for LT/pcr.]
+
+\DeclareFontFamily{LT}{pcr}{}
+
+\DeclareFontShape{LT}{pcr}{m}{n}{
+   <-> fcrr8l
+}{}
+
+\DeclareFontShape{LT}{pcr}{m}{it}{
+   <-> fcrro8l
+}{}
+
+\DeclareFontShape{LT}{pcr}{b}{n}{
+   <-> fcrb8l
+}{}
+
+\DeclareFontShape{LT}{pcr}{b}{it}{
+   <-> fcrbo8l
+}{}
+
+\DeclareFontShape{LT}{pcr}{l}{n}{<->ssub * pcr/m/n}{}
+\DeclareFontShape{LT}{pcr}{l}{it}{<->ssub * pcr/m/it}{}
+\DeclareFontShape{LT}{pcr}{m}{sl}{<->ssub * pcr/m/it}{}
+\DeclareFontShape{LT}{pcr}{l}{sl}{<->ssub * pcr/m/it}{}
+\DeclareFontShape{LT}{pcr}{bx}{n}{<->ssub * pcr/b/n}{}
+\DeclareFontShape{LT}{pcr}{bx}{it}{<->ssub * pcr/b/it}{}
+\DeclareFontShape{LT}{pcr}{b}{sl}{<->ssub * pcr/b/it}{}
+\DeclareFontShape{LT}{pcr}{bx}{sl}{<->ssub * pcr/b/it}{}
+
+\endinput

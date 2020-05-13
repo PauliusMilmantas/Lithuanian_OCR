@@ -1,0 +1,60 @@
+%% Please report errors to: Sigitas Tolusis
+%%                          sigitas@vtex.lt
+\ProvidesFile{lithuani.ldf}
+        [2001/07/04 Lithuanian support from the babel system v.3.7]
+\LdfInit{lithuanian}{captionslithuanian}
+\ifx\undefined\l@lithuanian
+  \@nopatterns{Lithuanian}
+  \adddialect\l@lithuanian0\fi
+\def\lithuanianhyphenmins{22}
+\addto\captionslithuanian{%
+  \def\prefacename{\protect\k Ivadas}%
+  \def\refname{Literat\protect\=ura}%
+  \def\abstractname{Rezium\protect\.e}%
+  \def\bibname{Literat\protect\=ura}%
+  \def\chaptername{Skyrius}%
+  \def\appendixname{Priedas}%
+  \def\contentsname{Turinys}%
+  \def\listfigurename{Paveiksl\protect\k u s\protect\k ara\protect\v sas}%
+  \def\listtablename{Lentel\protect\.es}%
+  \def\indexname{Rodykl\protect\.e}%
+  \def\figurename{}%
+  \def\tablename{Lentel\protect\.e}%
+  \def\partname{Dalis}%
+  \def\enclname{\protect\k Id\protect\.eta}%
+  \def\ccname{Kopijos}%
+  \def\headtoname{}%
+  \def\pagename{lapas}%
+  \def\seename{\protect\v zi\protect\=ur\protect\.ek}%
+  \def\alsoname{taip pat}%
+  }
+\let\captionszemaiciu\captionslithuanian
+\def\datelithuanian{%
+  \def\today{\number\year~m.~\ifcase\month\or
+    sausio\or vasario\or kovo\or baland\protect\v zio\or
+    gegu\protect\v z\protect\.es\or bir\protect\v zelio\or
+    liepos\or rugpj\protect\=u\protect\v cio\or rugs\protect\.ejo\or
+    spalio\or lapkri\protect\v cio\or gruod\protect\v zio\fi~\number\day~d.}%
+    }
+\addto\extraslithuanian{}
+\addto\noextraslithuanian{}
+\ldf@finish{lithuanian}
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+%%
+\endinput
+%%
+%% End of file `lithuani.ldf'.
