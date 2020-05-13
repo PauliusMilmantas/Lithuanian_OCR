@@ -1,0 +1,157 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage[utf8]{inputenc}
+\usepackage[lithuanian]{babel}
+\usepackage[T1]{fontenc}
+
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\usepackage[labelsep=endash]{caption}
+\renewcommand{\figurename}{pav}
+
+
+\usepackage{lipsum}  
+
+
+
+
+\begin{document}
+
+\title{Komandinės užduoties tema}
+
+\author{\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+\and
+\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+\and
+\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+\and
+\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+\and
+\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+\and
+\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockA{\textit{Informatikos institutas} \\
+\textit{Matematikos if informatikos fakultetas}\\
+Vilnius, Lietuva \\
+epastas@epastas.lt}
+}
+
+\maketitle
+
+\begin{abstract}
+Santrauka kokia problema spręsta. Ką taikėte, kokie rezultatai. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+5-6 Raktiniai žodžiai
+\end{IEEEkeywords}
+
+\section{Įvadas}
+Pristatote problemą
+
+\section{Metodai}
+
+\subsection{Metodas A}
+
+Pristatote naudojamus metodus
+
+\begin{equation}
+\mathcal{L}({\bf X}, {\bf Y}) = \frac{1}{w \cdot h} \sum_{i=1}^h \sum_{j=1}^w (X_{i, j} - Y_{i, j})^2
+\label{eq:lygtis1}
+\end{equation}
+
+Taikyta nuostolių funkcija ~\eqref{eq:lygtis1}.
+
+\begin{align}
+y & = f(x) \nonumber \\
+f & = f_1(f_2(x))
+\label{eq:lygtis2}
+\end{align}
+
+Taikytas modelis ~\eqref{eq:lygtis2}.
+
+
+\section{Duomenys}
+Aprašote naudojamus duomenis.
+
+\subsection{Equations}
+
+
+
+\subsection{Paveikslėliai ir lentelės}
+
+Paveikslėlį cituojame ``~\ref{fig} pav.''.
+
+Paveikslėlį cituojame ``~\ref{tab1} lentelė''.
+
+\begin{table}[htbp]
+\caption{Lentelės aprašas}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+a & b & c &  d \\
+\hline
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{figure}[!h] % įterpti čia
+\centerline{\includegraphics{fig1.png}}
+\caption{Paveikslėlio aprašas.}
+\label{fig}
+\end{figure}
+
+
+\section{Rezultatai}
+
+\begin{figure*}[ht] % puslapio viršuje
+\centerline{\includegraphics{fig1.png}}
+\caption{Paveikslėlio aprašas.}
+\label{fig}
+\end{figure*}
+
+
+\lipsum[2-10]
+
+
+
+
+
+
+Cituojame šaltinį \cite{lecun2015deep}.
+
+\bibliographystyle{plain}
+\bibliography{saltiniai}
+
+\end{document}
