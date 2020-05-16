@@ -1,5 +1,5 @@
-batch-1 A,B,C Empty image treshold: 4.595017433166504 Accuracy: 92%
-batch-2 a,P,u Empty image treshold: 2.9800212383270264 Accuracy: 94.23%
+batch-1 A,B,C Empty image treshold: -13.856529235839844 Accuracy: 92% Add: 2.61142733‬
+batch-2 a,P,u Empty image treshold: -12.614389419555664 Accuracy: 94.23076% Add: 6.9190127
 
 Another batch:
 lis
