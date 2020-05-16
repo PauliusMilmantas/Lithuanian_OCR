@@ -54,8 +54,8 @@ MSE = \frac{1}{n} * \sum_{i=1}^{n} (y_{i} - y_{i}^{p})^{2}
 
 \subsection{Optimizavimo funkcija}
 
-Optimizavimui buvo naudota stachastinio gradientinio nuolydžio
-(SGD) optimizavimo funckija. ~\eqref{eq:lygtis2}
+Optimizavimui buvo naudota stochastinio gradientinio nuolydžio
+(SGD) optimizavimo funkcija. ~\eqref{eq:lygtis2}
 
 \begin{equation}
 \theta^{(\tau)} = \theta^{(\tau - 1)} - \eta * \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
@@ -64,15 +64,15 @@ Optimizavimui buvo naudota stachastinio gradientinio nuolydžio
 
 \subsection{Naudojamas tinklas}
 
-Visos abėcėlės raidės yra suskirstomos į poaibius po 3 raides. ~\ref{fig1} Kiekvienam poaibiui yra
-sukuriama po atskirą neuroninį tinklą. Taip yra lengviau atlinkti tinklo treniravimą
+Visos abėcėlės raidės yra skirstomos į poaibius po 3 raides. ~\ref{fig1} Kiekvienam poaibiui yra
+sukuriama po atskirą neuroninį tinklą. Taip yra lengviau atlikti tinklo treniravimą
 ir tinklo užkrovimui galima sutaupyti RAM atminties. Norint pridėti daugiau
 duomenų, užtenka tinklą apmokyti tik vienam naujam poaibiui.
 \par
 Tinklą sudaro 2 paslėpti sluoksniai, 1 įvesties ir 1 išvesties sluoksnis. Duomenys
 yra 64x64 dydžio pilki vaizdai, todėl įvesties sluoksnis yra 4096 dydžio. Išvesties
 sluoksnis yra 3 dydžio, nes visi poaibiai yra sudaryti iš 3 narių. Visi sluoksniai naudoja
-RELU akvytavijos funkcijas.
+RELU aktyvacijos funkcijas.
 
 \begin{figure}[!h] % įterpti čia
 \centerline{\includegraphics[scale=0.4] {images/1.png}}
