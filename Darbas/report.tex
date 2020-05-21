@@ -36,14 +36,14 @@ paulius.milmantas@mif.stud.vu.lt}
 \begin{abstract}
 Darbe buvo spręsta rašytinės lietuvių kalbos raidžių atpažinimo problema.
 Parašyta programa gali aptikti 6 išmokytas raides: A, a, B, C, P, u vidutiniškai su
-93% atspėjimo tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
+85% atspėjimo tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
 užtenka sukurti naują duomenų rinkinį pagal tam tikrą formatą ir ištreniruoti naują
 3 elementų aptikimo tinklą. Kadangi programoje naudojama daug skirtingų tinklų ir kiekvienas
 jų atskiria tik 3 elementus, plečiant programą, nebereikia apmokyti visos sistemos iš naujo,
 užtenka tik pridėti naują tinklą, programa jį automatiškai aptinka ir pradeda naudoti.
 Naujam 3 raidžių poaibiui apmokyti reikia vidutiniškai 50 nuotraukų kiekvienai raidei ir
-norint pasiekti 93% tikslumą vidutiniškai užtenka 200 epochų. Naudojant Google Colab
-platformą tai vidutiniškai užtrunka apie 5 minutes. Naudojant daug neuroninių tinklų
+norint pasiekti 85% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
+platformą tai vidutiniškai užtrunka apie 10 minučių. Naudojant daug neuroninių tinklų
 taip pat išspręsta didelio RAM naudojimo problema: pagal esamus resursus galima
 apskaičiuoti kiek vienu momentu galima pakrauti tinklų ir pakrauti tik tam tikrą jų
 kiekį.
@@ -76,7 +76,7 @@ Optimizavimui buvo naudota stochastinio gradientinio nuolydžio
 
 \subsection{Naudojamas tinklas}
 
-Visos abėcėlės raidės yra skirstomos į poaibius po 3 raides. ~\ref{fig1} Kiekvienam poaibiui yra
+Visos abėcėlės raidės yra skirstomos į poaibius po 3 raides. Tai parodyta vaizde ~\ref{fig1} Kiekvienam poaibiui yra
 sukuriama po atskirą neuroninį tinklą. Taip yra lengviau atlikti tinklo treniravimą
 ir tinklo užkrovimui galima sutaupyti RAM atminties. Norint pridėti daugiau
 duomenų, užtenka tinklą apmokyti tik vienam naujam poaibiui.
@@ -99,7 +99,7 @@ RELU aktyvacijos funkcijas.
 Sričių radimui, kurias norima leisti per neuroninius tinklus, buvo naudojama
 objektų kraštinių paieška. Kadangi kiekvieną pikselį apibrėžia tik vienas skaičius:
 pilkos spalvos stiprumas, galima eiti per paveiksliuko kiekvieną pikselį ir
-tinrinti ar jo reikšmė labai skiriasi nuo praeitos. Šiuo metodu gaunamos visos kraštinės,
+tikrinti ar jo reikšmė labai skiriasi nuo praeitos. Šiuo metodu gaunamos visos kraštinės,
 tačiau atsiranda ir daug triukšmo. Triukšmas paprastai aiškiuose vaizduose būna nedidelis, todėl
 jį galima pašalinti tikrinant kraštinių vientisumas: jeigu pikselis yra aptiktas kaip kraštinė,
 tai jį turi supti dar nors vienas pikselis, kuris yra laikomas kraštine. Jeigu tokio pikselio šalia nėra,
@@ -148,22 +148,23 @@ failą ir atitinkamai apdorota: naudojant nearest neighbour metodą sumažinta i
 \section{Rezultatai}
 
 Parašyta programa gali aptikti 6 išmokytas raides: A, a, B, C, P, u vidutiniškai su
-93% atspėjimo tikimybe. Raides A, B, C aptinka su 92% procentų tikimybę, raides a, P, u
-su 94,23% tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
+85% atspėjimo tikimybe. Raides A, B, C aptinka su 82% procentų tikimybę, raides a, P, u
+su 92% tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
 užtenka sukurti naują duomenų rinkinį pagal tam tikrą formatą ir ištreniruoti naują
 3 elementų aptikimo tinklą. Kadangi programoje naudojama daug skirtingų tinklų ir kiekvienas
 jų atskiria tik 3 elementus, plečiant programą, nebereikia apmokyti visos sistemos iš naujo,
 užtenka tik pridėti naują tinklą, programa jį automatiškai aptinka ir pradeda naudoti.
 Naujam 3 raidžių poaibiui apmokyti reikia vidutiniškai 50 nuotraukų kiekvienai raidei ir
-norint pasiekti 93% tikslumą vidutiniškai užtenka 200 epochų. Naudojant Google Colab
-platformą tai vidutiniškai užtrunka apie 5 minutes. Naudojant daug neuroninių tinklų
+norint pasiekti 85% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
+platformą tai vidutiniškai užtrunka apie 10 minučių. Naudojant daug neuroninių tinklų
 taip pat išspręsta didelio RAM naudojimo problema: pagal esamus resursus galima
 apskaičiuoti kiek vienu momentu galima pakrauti tinklų ir pakrauti tik tam tikrą jų
 kiekį.
-
-Cituojame šaltinį \cite{lecun2015deep}.
-
-\bibliographystyle{plain}
-\bibliography{saltiniai}
+\par
+Dabartinei programos realizacijai trūksta geresnio radžių sričių radimo algoritmo.
+Šiuo metu programa aptinka daugiau raidžių nuotraukoje, negul jų yra. Pateikus
+programai ~\ref{fig2} vaizdą, programa vietoj rastų raidžių 'PauA', aptinka 'aPAPAPa'.
+\par
+Programos realizacijoje taip pat trūksta ir TODO implementacijos.
 
 \end{document}
