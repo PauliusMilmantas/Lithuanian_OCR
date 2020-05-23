@@ -12,6 +12,9 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{biblatex}
+\bibliography{saltiniai.bib}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
@@ -36,13 +39,13 @@ paulius.milmantas@mif.stud.vu.lt}
 \begin{abstract}
 Darbe buvo spręsta rašytinės lietuvių kalbos raidžių atpažinimo problema.
 Parašyta programa gali aptikti 6 išmokytas raides: A, a, B, C, P, u vidutiniškai su
-85% atspėjimo tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
+85\% atspėjimo tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
 užtenka sukurti naują duomenų rinkinį pagal tam tikrą formatą ir ištreniruoti naują
 3 elementų aptikimo tinklą. Kadangi programoje naudojama daug skirtingų tinklų ir kiekvienas
 jų atskiria tik 3 elementus, plečiant programą, nebereikia apmokyti visos sistemos iš naujo,
 užtenka tik pridėti naują tinklą, programa jį automatiškai aptinka ir pradeda naudoti.
 Naujam 3 raidžių poaibiui apmokyti reikia vidutiniškai 50 nuotraukų kiekvienai raidei ir
-norint pasiekti 85% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
+norint pasiekti 85\% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
 platformą tai vidutiniškai užtrunka apie 10 minučių. Naudojant daug neuroninių tinklų
 taip pat išspręsta didelio RAM naudojimo problema: pagal esamus resursus galima
 apskaičiuoti kiek vienu momentu galima pakrauti tinklų ir pakrauti tik tam tikrą jų
@@ -52,6 +55,8 @@ kiekį.
 \section{Įvadas}
 Užduoties tikslas: parašyti sprendimą, kuris iš duotos
 nuotraukos išgautų joje pateiktą Lietuvišką rašytinį tekstą.
+Atpažinimui buvo naudojamas stochastinio gradientų nuolydis (SGD).
+Buvo bandyta jį lyginti su naujai išėjusiu SGD modifikuotu variantu (pav. ~\ref{fig1}). Šio algoritmo nebuvo spėta pilnai realizuoti.
 
 \section{Metodai}
 
@@ -66,17 +71,23 @@ MSE = \frac{1}{n} * \sum_{i=1}^{n} (y_{i} - y_{i}^{p})^{2}
 
 \subsection{Optimizavimo funkcija}
 
-Optimizavimui buvo naudota stochastinio gradientinio nuolydžio
-(SGD) optimizavimo funkcija. ~\eqref{eq:lygtis2}
+Optimizavimui buvo naudota stochastinio gradientų nuolydžio
+(SGD) optimizavimo funkcija ~\eqref{eq:lygtis2}. Taip pat buvo bandyta realizuoti modifikuotą SGD algoritmą (pav. ~\ref{fig1}).
 
 \begin{equation}
 \theta^{(\tau)} = \theta^{(\tau - 1)} - \eta * \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
 \label{eq:lygtis2}
 \end{equation}
 
+\begin{figure}[!h] % įterpti čia
+\centerline{\includegraphics[scale=0.4] {images/2.png}}
+\caption{SGD modifikuotas algoritmas.}
+\label{fig4}
+\end{figure}
+
 \subsection{Naudojamas tinklas}
 
-Visos abėcėlės raidės yra skirstomos į poaibius po 3 raides. Tai parodyta vaizde ~\ref{fig1} Kiekvienam poaibiui yra
+Visos abėcėlės raidės yra skirstomos į poaibius po 3 raides. Tai parodyta pav. ~\ref{fig1} Kiekvienam poaibiui yra
 sukuriama po atskirą neuroninį tinklą. Taip yra lengviau atlikti tinklo treniravimą
 ir tinklo užkrovimui galima sutaupyti RAM atminties. Norint pridėti daugiau
 duomenų, užtenka tinklą apmokyti tik vienam naujam poaibiui.
@@ -103,7 +114,7 @@ tikrinti ar jo reikšmė labai skiriasi nuo praeitos. Šiuo metodu gaunamos viso
 tačiau atsiranda ir daug triukšmo. Triukšmas paprastai aiškiuose vaizduose būna nedidelis, todėl
 jį galima pašalinti tikrinant kraštinių vientisumas: jeigu pikselis yra aptiktas kaip kraštinė,
 tai jį turi supti dar nors vienas pikselis, kuris yra laikomas kraštine. Jeigu tokio pikselio šalia nėra,
-reiškia tikrinamas pikselis nėra kraštinė ir jo nereikia įtraukti. Rezultatas pateiktas vaizde ~\ref{fig3}.
+reiškia tikrinamas pikselis nėra kraštinė ir jo nereikia įtraukti. Rezultatas pateiktas pav. ~\ref{fig3}.
 
 \begin{figure}[!h] % įterpti čia
 \centerline{\includegraphics[scale=0.4] {images/before.png}}
@@ -120,7 +131,7 @@ reiškia tikrinamas pikselis nėra kraštinė ir jo nereikia įtraukti. Rezultat
 \par
 Radus kraštines ir taikant sąlygą, kad vaizde nėra daug pašalinių objektų galima
 aproksimuoti Y ašies padėtį, ties kuria yra parašytas tekstas, apskaičiuojant rastų kraštinių
-taškų Y koordinates. Rezultatas pateiktas vaizde ~\ref{fig4}.
+taškų Y koordinates. Rezultatas pateiktas pav. ~\ref{fig4}.
 
 \begin{figure}[!h] % įterpti čia
 \centerline{\includegraphics[scale=0.4] {images/aprox.png}}
@@ -148,14 +159,14 @@ failą ir atitinkamai apdorota: naudojant nearest neighbour metodą sumažinta i
 \section{Rezultatai}
 
 Parašyta programa gali aptikti 6 išmokytas raides: A, a, B, C, P, u vidutiniškai su
-85% atspėjimo tikimybe. Raides A, B, C aptinka su 82% procentų tikimybę, raides a, P, u
-su 92% tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
+85\% atspėjimo tikimybe. Raides A, B, C aptinka su 82\% procentų tikimybę, raides a, P, u
+su 92\% tikimybe. Padarytą sistemą galima plėsti nemodifikuojant esamo kodo:
 užtenka sukurti naują duomenų rinkinį pagal tam tikrą formatą ir ištreniruoti naują
 3 elementų aptikimo tinklą. Kadangi programoje naudojama daug skirtingų tinklų ir kiekvienas
 jų atskiria tik 3 elementus, plečiant programą, nebereikia apmokyti visos sistemos iš naujo,
 užtenka tik pridėti naują tinklą, programa jį automatiškai aptinka ir pradeda naudoti.
 Naujam 3 raidžių poaibiui apmokyti reikia vidutiniškai 50 nuotraukų kiekvienai raidei ir
-norint pasiekti 85% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
+norint pasiekti 85\% tikslumą vidutiniškai užtenka 300 epochų. Naudojant Google Colab
 platformą tai vidutiniškai užtrunka apie 10 minučių. Naudojant daug neuroninių tinklų
 taip pat išspręsta didelio RAM naudojimo problema: pagal esamus resursus galima
 apskaičiuoti kiek vienu momentu galima pakrauti tinklų ir pakrauti tik tam tikrą jų
@@ -163,8 +174,15 @@ kiekį.
 \par
 Dabartinei programos realizacijai trūksta geresnio radžių sričių radimo algoritmo.
 Šiuo metu programa aptinka daugiau raidžių nuotraukoje, negul jų yra. Pateikus
-programai ~\ref{fig2} vaizdą, programa vietoj rastų raidžių 'PauA', aptinka 'aPAPAPa'.
+programai ~\ref{fig2} pav., programa vietoj rastų raidžių 'PauA', aptinka 'aPAPAPa'.
+Programos realizacijoje taip pat trūksta ir modifikuoto SGD algoritmo implementacijos pav. 1. Tikėtina, jog ši modifikacija galėtų pagerinti
+tinklo tikslumą.
+
+\printbibliography
+
+\section{References}
 \par
-Programos realizacijoje taip pat trūksta ir TODO implementacijos.
+[1] Stochastic batch size for adaptive regularization in deep network optimization. Kensuke Nakamura and Stefano Soatto and Byung-Woo Hong. 
 
 \end{document}
+
