@@ -3,7 +3,7 @@
 
 \usepackage[L7x,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[lithuanian,english]{babel}
+\usepackage[english, lithuanian]{babel}
 
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
@@ -65,7 +65,7 @@ Buvo bandyta jį lyginti su naujai išėjusiu SGD modifikuotu variantu (pav. ~\r
 Darbe buvo naudota MSE (Mean Square Error) funkcija. ~\eqref{eq:lygtis1}
 
 \begin{equation}
-MSE = \frac{1}{n} * \sum_{i=1}^{n} (y_{i} - y_{i}^{p})^{2}
+MSE = \frac{1}{n} \cdot \sum_{i=1}^{n} (y_{i} - y_{i}^{p})^{2}
 \label{eq:lygtis1}
 \end{equation}
 
@@ -75,7 +75,7 @@ Optimizavimui buvo naudota stochastinio gradientų nuolydžio
 (SGD) optimizavimo funkcija ~\eqref{eq:lygtis2}. Taip pat buvo bandyta realizuoti modifikuotą SGD algoritmą (pav. ~\ref{fig1}).
 
 \begin{equation}
-\theta^{(\tau)} = \theta^{(\tau - 1)} - \eta * \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
+\theta^{(\tau)} = \theta^{(\tau - 1)} - \eta \cdot \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
 \label{eq:lygtis2}
 \end{equation}
 
@@ -180,7 +180,7 @@ tinklo tikslumą.
 
 \printbibliography
 
-\section{References}
+\section{Šaltiniai}
 \par
 [1] Stochastic batch size for adaptive regularization in deep network optimization. Kensuke Nakamura and Stefano Soatto and Byung-Woo Hong. 
 
