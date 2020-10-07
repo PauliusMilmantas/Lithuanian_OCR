@@ -1,5 +1,6 @@
+[Nuoroda į pilną darbą](https://github.com/PauliusMilmantas/Lithuanian_OCR/raw/master/Darbas/report.pdf)
 
-Darbe buvo spręsta rašytinės lietuvių kalbos raidžių atpažinimo
+  Darbe buvo spręsta rašytinės lietuvių kalbos raidžių atpažinimo
 problema. Parašyta programa gali aptikti 6 išmoktas raides: A, a, B, C,
 P, u vidutiniškai su 85% atspėjimo tikimybe. Padarytą sistemą galima
 plėsti nemodifikuojant esamo kodo: užtenka sukurti naują duomenų rinkinį
