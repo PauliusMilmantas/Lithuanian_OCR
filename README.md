@@ -32,8 +32,8 @@ Taikyta nuostolių funkcija
 
 Darbe buvo naudota MSE (Mean Square Error) funkcija.  
 
-$$MSE = \frac{1}{n} \cdot \sum_{i=1}^{n} (y_{i} - y_{i}^{p})^{2}
-\label{eq:lygtis1}$$
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/func1.png)
+
 
 Optimizavimo funkcija
 ---------------------
@@ -42,8 +42,7 @@ Optimizavimui buvo naudota stochastinio gradientų nuolydžio (SGD)
 optimizavimo funkcija  . Taip pat buvo bandyta realizuoti modifikuotą
 SGD algoritmą (pav.  [fig1]).
 
-$$\theta^{(\tau)} = \theta^{(\tau - 1)} - \eta \cdot \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
-\label{eq:lygtis2}$$
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/func2.png)
 
 ![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/2.png)
 
