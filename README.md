@@ -45,7 +45,7 @@ SGD algoritmą (pav.  [fig1]).
 $$\theta^{(\tau)} = \theta^{(\tau - 1)} - \eta \cdot \bigtriangledown_{\theta} Loss(\theta^{(\tau - 1)};(x_{i}, y_{i}))
 \label{eq:lygtis2}$$
 
-![image](images/2.png)
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/2.png)
 
 [fig4]
 
@@ -64,7 +64,7 @@ sluoksnis yra 4096 dydžio. Išvesties sluoksnis yra 3 dydžio, nes visi
 poaibiai yra sudaryti iš 3 narių. Visi sluoksniai naudoja RELU
 aktyvacijos funkcijas.
 
-![image](images/1.png)
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/1.png)
 
 [fig1]
 
@@ -83,11 +83,11 @@ kuris yra laikomas kraštine. Jeigu tokio pikselio šalia nėra, reiškia
 tikrinamas pikselis nėra kraštinė ir jo nereikia įtraukti. Rezultatas
 pateiktas pav. [fig3].
 
-![image](images/before.png)
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/before.png)
 
 [fig2]
 
-![image](images/after.png)
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/after.png)
 
 [fig3]
 
@@ -96,7 +96,7 @@ objektų galima aproksimuoti Y ašies padėtį, ties kuria yra parašytas
 tekstas, apskaičiuojant rastų kraštinių taškų Y koordinates. Rezultatas
 pateiktas pav.  [fig4].
 
-![image](images/aprox.png)
+![image](https://github.com/PauliusMilmantas/Lithuanian_OCR/blob/master/Darbas/images/aprox.png)
 
 [fig4]
 
